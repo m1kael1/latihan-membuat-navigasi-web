@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="index.css">
+  <script src="./index.js"></script>
+</head>
+
+<body>
+  <section class="header">
+    <div>
+      <h1><a href="#hi" class="logo">Hi.</a></h1>
+    </div>
+
+    <div class="search-bar">
+      <button onclick="showSearchBar()">
+        <img class="icon-search" src="./asset/icon-search.svg" />
+      </button>
+      <input class="search-input search-close" type="text" placeholder="Hi.Search..." id="search" />
+      <button onclick="closeSearchBar()">
+        <img class="close-search" src="./src/cancel-close.svg" />
+      </button>
+    </div>
+    <button class="icon-bar" onclick="shownavigasi()">
+      <img src="./asset/menu-bars.svg" alt="">
+    </button>
+    <nav class="navigasi">
+      <ul class="menu">
+        <button class="icon-cancel" onclick="hidenavigasi()">
+          <img src="./asset/cancel-close.svg" alt="">
+        </button>
+        <li><a href="#p1" class=".active" data-replace="Home" style="color: black;"><span>Home</span></a></li>
+        <li><a href="#p2" class=".active" data-replace="About" style="color: black;"><span>About</span></a></li>
+        <li><a href="#p3" class=".active" data-replace="Contact" style="color: black;"><span>Contact</span></a></li>
+      </ul>
+    </nav>
+
+  </section>
+  <section class="srchmain">
+    <div class="results-container>
+      <ul class=" results-list" id="list">
+      </ul>
+    </div>
+  </section>
+  <section class="main">
+
+    <section class="pagetest" id="hi">
+      <h2>Hi.</h2>
+    </section>
+
+    <section class="pagetest" id="p1">
+      <h2>Home</h2>
+    </section>
+
+    <section class="pagetest" id="p2">
+      <h2>About</h2>
+    </section>
+
+    <section class="pagetest" id="p3">
+      <h2>Contact</h2>
+    </section>
+
+  </section>
+  <section class="footer">
+
+  </section>
+
+
+
+</body>
+
+</html>
